@@ -89,9 +89,34 @@
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
-                      
                     </div>
                   </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Go somewhere <span class="badge bg-secondary">New</span></a>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </section>
 
 
@@ -187,27 +212,37 @@
         <!-- small-container -->
 
         <!-- contact section -->
-        <section class="contact-me" id="contact">
+        <section class="contact-me " id="contact">
             <img class="eclipse" alt="Image missing">
-            <div class="content">
-                <h1>
-                    Contact me
-                </h1>
-                <p class="text-form">
-                    If you have an application you are interested in developing, a feature that you need built or a
-                    project that needs coding. I’d love to help with it
-                </p>
-                <form action="https://formspree.io/f/mvoyeelg" class="contact-form" method="POST">
-
-                    <input name="name" id="name" type="text" placeholder="Alexandra Loremipsum" maxlength="30" required>
-
-                    <input name="email" type="email" name="replyto" placeholder="alexandra@gmail.com" required>
-
-                    <textarea name="message" cols="30" rows="10" placeholder="Write your message here" maxlength="500"
-                        required></textarea>
-
-                    <button class="submit" type="submit" value="Send"> Get In Touch </button>
-                </form>
+            <div class="content container">
+                <div class="row">
+                    <div class="col">
+                        <h1>
+                            Contact me
+                        </h1>
+                        <p class="text-form">
+                            If you have an application you are interested in developing, a feature that you need built or a
+                            project that needs coding. I’d love to help with it
+                        </p>
+                    </div>
+                    <div class="col">
+                        <form action="https://formspree.io/f/mvoyeelg" class="contact-form" method="POST">
+                                <div class="mb-3">
+                                <input name="name" class="form-control" id="name" type="text" placeholder="Alexandra Loremipsum" maxlength="30" required>
+                                </div>
+                                <div class="mb-3">
+                                <input name="email" class="form-control" type="email" name="replyto" placeholder="alexandra@gmail.com" required>
+                                    
+                                </div>
+                                <div class="mb-3">
+                                <textarea name="message" class="form-control" cols="30" rows="10" placeholder="Write your message here" maxlength="500"
+                                    required></textarea>
+                                </div>
+                                <button class="btn btn-primary" type="submit" value="Send"> Get In Touch </button>
+                        </form>
+                    </div>
+                </div>
+                
 
             </div>
         </section>
